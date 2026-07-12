@@ -8,9 +8,9 @@ export default function Home() {
     <>
 
     <Hero/>
+    <About/>
     <WhyUs/>
     
-    <About/>
     </>
     
   );
