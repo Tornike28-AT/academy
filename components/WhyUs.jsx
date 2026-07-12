@@ -1,6 +1,6 @@
 export default function WhyUs() {
   return (
-    <section className="w-full h-screen bg-white flex justify-center items-center flex-col gap-6">
+    <section className=" mt-20 w-full h-screen bg-white flex justify-center items-center flex-col gap-6">
         <div className="flex justify-center items-center flex-col flex-direction:column">
             <h1 className="text-red-600 text-[40px] font-bold md:text-[65px] lg:text-[55px]">რატომ</h1>
             <h1 className="text-black text-[40px] font-bold md:text-[65px] lg:text-[55px]">ცაავას</h1>
