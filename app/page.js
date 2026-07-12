@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import WhyUs from "@/components/WhyUs";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
 
     <Hero/>
+    <WhyUs/>
     
     
     </>
