@@ -14,7 +14,7 @@ const Hero = () => {
         loop
         playsInline
       />
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/70" />
 
       <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
