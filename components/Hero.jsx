@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-gray-300 flex justify-center items-center">
-      <div className="flex justify-center items-center flex-col  gap-6">
+    <section className="w-full h-screen bg-black flex justify-center items-center">
+      <div className="flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
           <h1 className="text-white text-[30px] font-bold md:text-[55px] lg:text-[40px]">
             პირადი მიდგომა
@@ -32,11 +33,8 @@ const Hero = () => {
             გაიგე მეტი
           </button>
         </div>
-        <img
-          src="https://placehold.co/200x50"
-          alt=""
-          className="mt-6 md:w-70 lg:w-60"
-        />
+                    <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className="w-60.75 h-[114px] absolute bottom-10 right-10" />
+        
       </div>
     </section>
   );

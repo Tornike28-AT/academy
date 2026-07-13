@@ -1,14 +1,16 @@
+import Image from "next/image";
+import Link from "next/link";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaPhoneSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
     <section className=" w-full h-auto flex flex-col justify-center items-center gap-4 bg-black md:gap-8">
-        <div className="mt-5">
-            <img src="https://placehold.co/200x50" alt="" />
+        <div className="mt-5 relative">
+            <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className="w-60.75 h-[114px]" />
         </div>
         <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:gap-10">
-            <a href="" className="text-white font-bold">Home</a>
+            <Link href="" className="text-white font-bold">Home</Link>
             <a href="" className="text-white font-bold">About</a>
             <a href="" className="text-white font-bold">Offer</a>
             <a href="" className="text-white font-bold">FAQ</a>
