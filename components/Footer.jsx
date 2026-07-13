@@ -11,10 +11,10 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:gap-10">
             <Link href="" className="text-white font-bold">Home</Link>
-            <a href="" className="text-white font-bold">About</a>
-            <a href="" className="text-white font-bold">Offer</a>
-            <a href="" className="text-white font-bold">FAQ</a>
-            <a href="" className="text-white font-bold">Contact</a>
+            <Link href="" className="text-white font-bold">About</Link>
+            <Link href="" className="text-white font-bold">Offer</Link>
+            <Link href="" className="text-white font-bold">FAQ</Link>
+            <Link href="" className="text-white font-bold">Contact</Link>
         </div>
         <div className="flex gap-2">
             <FaSquareInstagram className="text-white w-8 h-8"/>
