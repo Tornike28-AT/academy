@@ -4,8 +4,19 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-black flex justify-center items-center">
-      <div className="flex justify-center items-center flex-col  gap-6 ">
+    <section className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/intro.mp4"
+        poster="/images/hero-poster.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      <div className="absolute inset-0 bg-black/50" />
+
+      <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
           <h1 className="text-white text-[30px] font-bold md:text-[55px] lg:text-[40px]">
             პირადი მიდგომა
@@ -33,8 +44,13 @@ const Hero = () => {
             გაიგე მეტი
           </button>
         </div>
-                    <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className="w-60.75 h-[114px] absolute bottom-10 right-10" />
-        
+        <Image
+          src="/logo.png"
+          alt="Tsaava Individual Academy"
+          width={879}
+          height={414}
+          className="w-60.75 h-28.5 absolute bottom-10 right-10"
+        />
       </div>
     </section>
   );
