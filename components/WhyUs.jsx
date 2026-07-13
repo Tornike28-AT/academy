@@ -1,23 +1,20 @@
 export default function WhyUs() {
   return (
-    <section className=" mt-20 w-full h-screen bg-white flex justify-center items-center flex-col gap-6">
-        <div className="flex justify-center items-center flex-col flex-direction:column">
-            <h1 className="text-red-600 text-[40px] font-bold md:text-[65px] lg:text-[55px]">რატომ</h1>
-            <h1 className="text-black text-[40px] font-bold md:text-[65px] lg:text-[55px]">ცაავას</h1>
-            <h1 className="text-black text-[40px] font-bold md:text-[65px] lg:text-[55px]">აკადემია?</h1>
-        </div>
-        <div className="flex justify-center items-center flex-col flex-direction:column gap-6 lg:flex-row flex-direction:row">
-            <img src="https://placehold.co/300x300" alt="" className="md:w-120 md:h-120 lg:w-100 lg:h-100"/>
-            <div>
-             <p className="text-black text-[12px] font-bold md:text-[20px] md:w-200 lg:text-[20px]">
-                ყველა ფეხბურთელი განსხვავებულია და სწორედ ამიტომ ვქმნით ინდივიდუალურ სავარჯიშო პროგრამებს 
-                თითოეული მოთამაშის საჭიროებების მიხედვით. ჩვენი მიზანია არა მხოლოდ ტექნიკური უნარების გაუმჯობესება, 
-                არამედ ფეხბურთელის თავდაჯერების, თამაშის აზროვნებისა და მოედანზე სწორი გადაწყვეტილებების მიღების განვითარება.
-            </p>  
-            <button className="bg-red-600 p-3 text-[12px] mt-3 text-white font-bold rounded-lg md:text-[20px] lg:mt-6 lg:cursor-pointer">დარეგისტრირდი დღესვე</button>
-            </div>
-        </div>
-      
+    <section className="w-full h-screen flex flex-col items-start gap-10 md:flex md:items-center md:gap-20 lg:flex lg:flex-row ">
+      <div className="ml-5 mt-5 pr-5 flex flex-col items-start gap-6 md:mt-18 lg:ml-10">
+        <p className="text-gray-500 font-bold md:text-2xl">Why us</p>
+        <h1 className="font-bold text-2xl md:text-4xl">რატომ ცაავას აკადემია?</h1>
+        <p className="md:w-145 text-[20px]">
+          ინდივიდუალური მიდგომა, პროფესიონალური ცოდნა და შედეგზე ორიენტირებული ვარჯიში.
+        </p>
+        <p className="md:w-145 text-[20px]">
+          ვაფასებთ თითოეული ფეხბურთელის შესაძლებლობებს, ვადგენთ განვითარების სწორ გზას და ვმუშაობთ იმ უნარებზე
+        </p>
+        <button className="p-4 bg-green-600 rounded text-white font-bold">დარეგისტრირდი</button>
+      </div>
+      <div className="pl-5 pr-5">
+        <img src="https://placehold.co/572x388" alt="" className="rounded" />
+      </div>   
     </section>
   );
 }
