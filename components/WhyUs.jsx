@@ -5,11 +5,11 @@ export default function WhyUs() {
         <p className="text-gray-500 font-bold md:text-2xl">Why us</p>
         <h1 className="font-bold text-2xl md:text-4xl">რატომ ცაავას აკადემია?</h1>
         <p className="md:w-145 text-[20px]">
-          ინდივიდუალური მიდგომა, პროფესიონალური ცოდნა და შედეგზე ორიენტირებული ვარჯიში.
-        </p>
-        <p className="md:w-145 text-[20px]">
+          ინდივიდუალური მიდგომა, პროფესიონალური ცოდნა და შედეგზე ორიენტირებული ვარჯიში <br className="lg:hidden"/>
           ვაფასებთ თითოეული ფეხბურთელის შესაძლებლობებს, ვადგენთ განვითარების სწორ გზას და ვმუშაობთ იმ უნარებზე
         </p>
+        
+        
         <button className="p-4 bg-green-600 rounded text-white font-bold">დარეგისტრირდი</button>
       </div>
       <div className="">
