@@ -6,7 +6,7 @@ const Offer = () => {
     <section className="pt-20 pb-20   max-w-380 w-full mx-auto">
       <div className="flex flex-col px-5 items-center space-y-5 lg:flex-row lg:justify-between gap-5">
         <div className="lg:flex-1">
-            <h2 className="text-gray-500 uppercase texxt-justify text-4xl md:text-5xl font-extrabold mb-5">Step inside Our <br/> <span className="text-black">Academy</span></h2>
+            <h2 className="text-gray-500 uppercase texxt-justify text-4xl md:text-6xl font-extrabold mb-5">Step inside Our <br/> <span className="text-black">Academy</span></h2>
             <p className="w-full max-w-130 text-lg md:text-xl leading-8 text-justify md:text-start mb-10">Experience our cutting-edge facilities designed to nurture talent, improve performance, giving every player the tools to succeed on and off the pitch.</p>
             <img src="https://placehold.co/572x388" alt="" className="hidden md:block" />
         </div>

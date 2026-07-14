@@ -41,8 +41,7 @@ const faqItems = [
 const Faq = () => {
   return (
     <section className='pt-20 pb-20 px-5    max-w-380 w-full mx-auto'>
-
-        <h2 className='text-gray-500 uppercase texxt-justify text-4xl md:text-5xl font-extrabold mb-15'>
+        <h2 className='text-gray-500 uppercase texxt-justify text-4xl md:text-6xl font-extrabold mb-15'>
             Frequently Asked <br/> <span className='text-black'>Questions</span>
         </h2>
         <div className='flex gap-5  flex-col items-center lg:flex-row lg:justify-between lg:gap-15'>
