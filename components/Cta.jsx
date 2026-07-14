@@ -44,7 +44,7 @@ const Cta = () => {
             Registration
           </button>
         </div>
-        <div className="relative max-w-120 w-full">
+        <div className=" flex justify-center relative max-w-120 w-full lg:block">
             <Image src="/mobile.png" alt="instagram mobile screen" width={355} height={711} className="w-[355px] h-"/>
         </div>
       </div>
