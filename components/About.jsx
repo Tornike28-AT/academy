@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between">
         <div className=" space-y-5 flex flex-col justify-center">
           <p className="capitalize  text-zinc-500 text-lg font-medium">training for ur success</p>
-          <h2 className="capitalize texxt-justify text-4xl md:text-6xl font-bold ">Join our team and <br/> elevate your skills</h2>
+          <h2 className="text-gray-500 uppercase texxt-justify text-3xl md:text-6xl font-extrabold ">Join our team and <br/><span className='text-black'> elevate your skills</span></h2>
           <p className="w-full max-w-130 text-lg md:text-xl leading-8 text-justify md:text-start">
 
             Our team is committed to delivering high-quality services tailored

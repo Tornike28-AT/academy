@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <section className=" w-full h-auto flex flex-col justify-center items-center gap-4 bg-black md:gap-8">
         <div className="mt-5 relative">
-            <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className="w-60.75 h-[114px]" />
+            <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className=" w-50.75 lg:w-60.75 lg:h-28.5" />
         </div>
         <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:gap-10">
             <Link href="" className="text-white font-bold">Home</Link>

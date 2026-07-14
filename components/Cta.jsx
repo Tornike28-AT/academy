@@ -11,19 +11,19 @@ const Cta = () => {
     <section className=" max-w-380 w-full mx-auto px-5   ">
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between">
         <div className=" space-y-10 flex flex-col justify-center">
-            <h2 className="text-gray-500 uppercase texxt-justify text-4xl md:text-6xl font-extrabold mb-5">
+            <h2 className="text-gray-500 uppercase texxt-justify text-3xl md:text-6xl font-extrabold mb-5">
             We Invite You To <br />
             <span className="text-black">Visit our Academy</span>
-           
+        
           </h2>
-            <p className="w-full max-w-130 text-lg md:text-xl leading-8 text-justify md:text-start mb-10">Take the first step toward becoming a stronger, smarter, and more confident player. Contact us today to learn more or book your first training session.</p>
+            <p className="w-full max-w-150 text-lg  md:text-xl leading-8 text-justify md:text-start mb-10">Take the first step toward becoming a stronger, smarter, and more confident player. Contact us today to learn more or book your first training session.</p>
             <ul className="text-lg font-medium text-zinc-600">
               <li className="flex items-center gap-2"><FaPhoneAlt size={20}className="text-[#158F3C]"/>+995 555 123 456 789</li>
               <li className="flex items-center gap-2"><IoMdMail size={20}className="text-[#158F3C]"/>Example@gmail.com</li>
-              <li className="flex items-center gap-2"><FaLocationDot size={20}className="text-[#158F3C]"/>Sports Center Imedi,  182 Davit Aghmashenebeli Ave, Tbilisi</li>
+              <li className="flex items-center gap-2"><FaLocationDot size={20}className="text-[#158F3C]"/> 182 Davit Aghmashenebeli Ave, Tbilisi</li>
             </ul>
 
-          <div className="flex items-start gap-3">
+          <div className="flex justify-center lg:justify-start  lg:items-start gap-3">
             <Link href={"#"} className="flex p-2 ring-1 rounded-full transition-colors hover:bg-[#D62976] hover:text-white">
               <FaInstagram  size={20} />
             </Link>
@@ -40,7 +40,7 @@ const Cta = () => {
               <IoLogoWhatsapp size={20} />
             </Link>
           </div>
-          <button className="self-start bg-green-600 px-10 py-2  text-white font-medium">
+          <button className="self-center lg:self-start bg-green-600 px-10 py-2  text-white font-medium">
             Registration
           </button>
         </div>
