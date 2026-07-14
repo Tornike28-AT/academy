@@ -18,15 +18,11 @@ const Hero = () => {
 
       <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
-          <h1 className="text-white text-[30px] font-bold md:text-[55px] lg:text-[40px]">
-            პირადი მიდგომა
-          </h1>
-          <h1 className="text-white text-[30px] font-bold md:text-[55px] lg:text-[40px]">
-            რეალური შედეგები
-          </h1>
-          <h1 className="text-white text-[30px] font-bold md:text-[55px] lg:text-[40px]">
-            შენი სეზონი <span className="text-green-500">იწყება აქ!</span>
-          </h1>
+          <h1 className=" text-center text-white text-[30px] font-bold md:text-[40px] lg:text-[55px]">
+            პირადი მიდგომა <br/>
+            რეალური შედეგები <br/>
+            შენი სეზონი <span className="text-green-400">იწყება აქ!</span>
+          </h1>      
         </div>
         <div className="flex justify-center items-center flex-col">
           <p className="text-white font-bold md:text-[27px] lg:text-[22px]">

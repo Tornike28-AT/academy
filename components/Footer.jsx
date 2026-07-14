@@ -18,19 +18,19 @@ export default function Footer() {
             <Link href="" className="text-white font-bold">Contact</Link>
         </div>
         <div className="flex items-start gap-3">
-            <Link href={"#"} className="flex p-2 ring-1 rounded-full transition-colors hover:bg-[#D62976] hover:text-white">
+            <Link href={"#"} className="text-white flex p-2 ring-1 rounded-full transition-colors hover:bg-[#D62976]">
               <FaInstagram size={20} />
             </Link>
-            <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#1877F2] hover:text-white">
+            <Link href={"#"} className=" text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#1877F2]">
               <FaFacebookF  size={20} />
             </Link>
-             <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#FE2C55] hover:text-white">
+             <Link href={"#"} className=" text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#FE2C55]">
               <FaTiktok  size={20} />
             </Link>
-            <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#0A66C2] hover:text-white">
+            <Link href={"#"} className="text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#0A66C2]">
               <FaLinkedinIn  size={20} />
             </Link>
-            <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#29D487] hover:text-white">
+            <Link href={"#"} className="text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#29D487]">
               <IoLogoWhatsapp size={20} />
             </Link>
           </div>
