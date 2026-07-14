@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaPhoneSquare } from "react-icons/fa";
+import { FaFacebookF, FaFacebookSquare, FaInstagram, FaInstagramSquare, FaLinkedin, FaLinkedinIn, FaPhoneSquare, FaTiktok } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Footer() {
   return (
@@ -16,12 +17,23 @@ export default function Footer() {
             <Link href="" className="text-white font-bold">FAQ</Link>
             <Link href="" className="text-white font-bold">Contact</Link>
         </div>
-        <div className="flex gap-2">
-            <FaSquareInstagram className="text-white w-8 h-8"/>
-            <FaFacebookSquare className="text-white w-8 h-8"/>
-            <FaLinkedin className="text-white w-8 h-8"/>
-            <FaPhoneSquare className="text-white w-8 h-8"/>
-        </div>
+        <div className="flex items-start gap-3">
+            <Link href={"#"} className="flex p-2 ring-1 rounded-full transition-colors hover:bg-[#D62976] hover:text-white">
+              <FaInstagram size={20} />
+            </Link>
+            <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#1877F2] hover:text-white">
+              <FaFacebookF  size={20} />
+            </Link>
+             <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#FE2C55] hover:text-white">
+              <FaTiktok  size={20} />
+            </Link>
+            <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#0A66C2] hover:text-white">
+              <FaLinkedinIn  size={20} />
+            </Link>
+            <Link href={"#"} className="p-2 ring-1 rounded-full transition-colors hover:bg-[#29D487] hover:text-white">
+              <IoLogoWhatsapp size={20} />
+            </Link>
+          </div>
         <div className=" w-full flex flex-col justify-center items-center gap-1 pb-2 md:flex md:flex-row md:justify-between md:px-10 lg:px-30">
             <p className="text-gray-400">Created by <span className="text-white ml-2">AT Studio</span></p>
             <p className="text-gray-400"><span className="mr-2">2026</span> All Rights Reserved</p>
