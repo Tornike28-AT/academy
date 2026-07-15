@@ -10,7 +10,7 @@ export default function WhyUs() {
         </p>
         
         
-        <button className="p-4 bg-green-600 rounded text-white font-bold">დარეგისტრირდი</button>
+        <button className="p-4 bg-green-600 rounded text-white font-bold">დარეგისტრირდი!</button>
       </div>
       <div className="">
         <img src="https://placehold.co/572x388" alt="" className="rounded" />
