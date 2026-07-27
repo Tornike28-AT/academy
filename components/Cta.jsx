@@ -11,12 +11,12 @@ const Cta = () => {
     <section className=" max-w-380 w-full mx-auto px-5   ">
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between">
         <div className=" space-y-10 flex flex-col justify-center">
-            <h2 className="text-gray-500 uppercase texxt-justify text-3xl md:text-6xl font-extrabold mb-5">
-            We Invite You To <br />
-            <span className="text-black">Visit our Academy</span>
-        
-          </h2>
-            <p className="w-full max-w-150 text-lg  md:text-xl leading-8 text-justify md:text-start mb-10">Take the first step toward becoming a stronger, smarter, and more confident player. Contact us today to learn more or book your first training session.</p>
+         <h2 className="text-gray-500 uppercase text-3xl md:text-6xl font-extrabold mb-9 leading-18">
+  გახსენი შენი პოტენციალი — <br />
+  <span className="text-black">ივარჯიშე ჩვენთან!</span>
+</h2>
+            <p className="w-full max-w-150 text-lg  md:text-xl leading-8 text-justify mb-10">გადადგით პირველი ნაბიჯი იმისკენ, რომ გახდეთ უფრო ძლიერი, ჭკვიანი და თავდაჯერებული მოთამაშე. დაგვიკავშირდით დღესვე, რათა მიიღოთ დამატებითი ინფორმაცია ან დაჯავშნოთ პირველი ვარჯიში.
+</p>
             <ul className="text-lg font-medium text-zinc-600">
               <li className="flex items-center gap-2"><FaPhoneAlt size={20}className="text-[#158F3C]"/>+995 555 123 456 789</li>
               <li className="flex items-center gap-2"><IoMdMail size={20}className="text-[#158F3C]"/>Example@gmail.com</li>
@@ -40,8 +40,8 @@ const Cta = () => {
               <IoLogoWhatsapp size={20} />
             </Link>
           </div>
-          <button className="self-center lg:self-start bg-green-600 px-10 py-2  text-white font-medium">
-            Registration
+          <button className="self-center lg:self-start bg-green-600 px-10 py-4  text-white font-medium">
+            ვარჯიშების დაჯავშნა
           </button>
         </div>
         <div className=" flex justify-center relative max-w-120 w-full lg:block">

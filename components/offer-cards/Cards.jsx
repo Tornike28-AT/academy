@@ -5,20 +5,20 @@ import { GoArrowUpRight } from "react-icons/go";
 const cards = [
   {
     id: 1,
-    title: "Certified Coaches",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "ინფრასტრუქტურა და აღჭურვილობა",
+    desc: "თანამედროვე სავარჯიშო ინვენტარი, კოორდინაციისა და სისწრაფის აღჭურვილობა. ვარჯიშები ტარდება „იმედის“ სტადიონზე (მუშტაიდის ბაღთან).",
     imgUrl: "https://placehold.co/154x220",
   },
   {
     id: 2,
-    title: "Modern Training Grounds",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "პროგრესი და შედეგები",
+    desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
     imgUrl: "https://placehold.co/154x220",
   },
   {
     id: 3,
-    title: "Proven Achievements",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "მენტალიტეტი და საზოგადოება",
+    desc: "ვასწავლით დისციპლინას, პასუხისმგებლობას, შრომისმოყვარეობას, თავდაჯერებულობას, პატივისცემას და გამარჯვებულის მენტალიტეტს — თვისებებს, რომლებიც როგორც სპორტში, ისე ცხოვრებაში ეხმარებათ.",
     imgUrl: "https://placehold.co/154x220",
   },
   {
@@ -50,7 +50,7 @@ const Cards = () => {
               <h3 className="text-xl lg:text-2xl font-medium">{card.title}</h3>
               <GoArrowUpRight
                 size={40}
-                className={`bg-zinc-400/20 rounded-full p-2 ml-auto shrink-0 ${activeCard ===card.id? "hidden" : ""}`}
+                className={`bg-zinc-400/20 rounded-full p-2 ml-auto shrink-0 ${activeCard === card.id? "hidden" : ""}`}
               />
             </div>
             {activeCard === card.id && <p className="text-sm lg:text-lg">{card.desc}</p>}
@@ -62,5 +62,6 @@ const Cards = () => {
     </div>
   );
 };
+
 
 export default Cards;
