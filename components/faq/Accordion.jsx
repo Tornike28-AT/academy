@@ -24,13 +24,13 @@ const Accordion = ({ accordionItems }) => {
               onClick={() => setActiveAccordion(item.id)}
              
               className={clsx(
-                "w-full flex items-center justify-between gap-4 text-left text-2xl font-bold py-5 px-4 rounded-lg transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+                "w-full flex items-center justify-between gap-4 text-left text-2xl font-bold py-5 px-2 rounded-lg transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
                 isActive
                   ? "text-white focus-visible:ring-white"
                   : "text-black hover:bg-black/3 focus-visible:ring-black"
               )}
             >
-              <span className="flex items-center gap-3 text-lg lg:text-xl">
+              <span className="flex items-center gap-2 text-[16px] lg:text-xl ">
                 <span
                   className={clsx(
                     "shrink-0 rounded-full w-8 h-8 flex items-center justify-center text-base transition-colors duration-300",
@@ -60,7 +60,7 @@ const Accordion = ({ accordionItems }) => {
               )}
             >
               <div className="overflow-hidden">
-                <p className="text-lg text-white px-4 pb-5 pt-0 leading-relaxed">
+                <p className="text-md lg:text-lg text-white px-4 pb-5 pt-0 leading-relaxed">
                   {item.answer}
                 </p>
               </div>

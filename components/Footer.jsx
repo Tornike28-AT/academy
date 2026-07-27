@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Footer() {
   return (
-    <section className=" w-full h-auto flex flex-col justify-center items-center gap-4 bg-black md:gap-8">
+    <section className=" w-full h-auto flex flex-col justify-center items-center space-y-12 bg-black ">
         <div className="mt-5 relative">
             <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className=" w-50.75 lg:w-60.75 lg:h-28.5" />
         </div>
@@ -34,9 +34,9 @@ export default function Footer() {
               <IoLogoWhatsapp size={20} />
             </Link>
           </div>
-        <div className=" w-full flex flex-col justify-center items-center gap-1 pb-2 md:flex md:flex-row md:justify-between md:px-10 lg:px-30">
-            <p className="text-gray-400">Created by <span className="text-white ml-2">AT Studio</span></p>
-            <p className="text-gray-400"><span className="mr-2">2026</span> All Rights Reserved</p>
+        <div className=" w-full flex flex-col justify-center items-center  pb-2 md:flex md:flex-row md:justify-between md:px-10 lg:px-30">
+            <p className="text-gray-400 flex">Created by <span className="text-white ml-2">AT Studio</span></p>
+            <p className="text-gray-400 ">© 2026 All Rights Reserved</p>
         </div>
     </section>
   );

@@ -6,33 +6,51 @@ import MoreQuestions from './faq/MoreQuestions';
 const faqItems = [
   {
     id: 1,
-    question: "What age groups do you train?",
+    question: "რით განსხვავდება ინდივიდუალური ვარჯიში გუნდური ვარჯიშისგან?",
     answer:
-      "We offer individual soccer training for players of all skill levels, typically from ages 6 to adult."
+      "გუნდში მწვრთნელის ყურადღება 20+ მოთამაშეზე ნაწილდება და აქცენტი ტაქტიკაზე კეთდება. ჩვენთან 100% ყურადღება ეთმობა კონკრეტულად თქვენი შვილის/თქვენს სუსტ წერტილებს, დეტალების დახვეწასა და ინდივიდუალურ ტექნიკას."
   },
   {
     id: 2,
-    question: "How long is each training session?",
+    question: "რა ასაკობრივი ჯგუფებისთვის არის განკუთვნილი ვარჯიშები?",
     answer:
-      "Each session lasts approximately 60 minutes and is tailored to the player's goals and current ability."
+      "ჩვენ ვავარჯიშებთ ნებისმიერი დონის ფეხბურთელს, ჩვეულებრივ 6 წლიდან ზრდასრულ ასაკამდე. პროგრამა ერგება მოთამაშის ინდივიდუალურ მონაცემებსა და ასაკობრივ თავისებურებებს."
   },
   {
     id: 3,
-    question: "What should I bring to training?",
+    question: "ავარჯიშებთ თუ არა კონკრეტული სათამაშო პოზიციის მიხედვით?",
     answer:
-      "Bring your soccer boots, shin guards, water bottle, and comfortable training clothes. A positive attitude is always welcome!"
+      "დიახ. მცველებს, ნახევარმცველებსა და თავდამსხმელებს სრულიად განსხვავებული სპეციფიკური უნარები სჭირდებათ. ვარჯიშები იგეგმება იმ სათამაშო პოზიციის გათვალისწინებით, სადაც ფეხბურთელი მოედანზე ასპარეზობს."
   },
   {
     id: 4,
-    question: "Can beginners join individual training?",
+    question: "ხომ არ გადაიღლება ფეხბურთელი, თუ პარალელურად გუნდშიც ვარჯიშობს?",
     answer:
-      "Absolutely! Our sessions are personalized, making them ideal for beginners as well as advanced players looking to improve."
+      "არა, რადგან ჩვენი ინდივიდუალური გეგმა იწყობა მოთამაშის გუნდური განრიგისა და თამაშების მიხედვით. დატვირთვები ისე რეგულირდება, რომ თავიდან ავირიდოთ გადაღლა და პირიქით — ხელი შევუწყოთ სწორ აღდგენას."
   },
   {
     id: 5,
-    question: "How can I book a training session?",
+    question: "რამდენი ხანი გრძელდება ერთი სავარჯიშო სესია?",
     answer:
-      "You can book a session by contacting us through our website, social media, or by phone. We'll arrange a time that works best for you."
+      "ერთი ინდივიდუალური ვარჯიშის ხანგრძლივობა შეადგენს 60-იდან 90 წუთამდე. ეს დრო მოიცავს გახურებას, ძირითად ტექნიკურ/ფიზიკურ დატვირთვას და ვარჯიშის შემდგომ აღდგენით (Stretching) ვარჯიშებს."
+  },
+  {
+    id: 6,
+    question: "რა უნდა ვიქონიო თან ვარჯიშზე მოსვლისას?",
+    answer:
+      "თან უნდა გქონდეთ სპორტული ფორმა (ბუცები/მრავალწვეტიანი ბუცები საფარის მიხედვით), ინდივიდუალური წყლის ბოთლი და პოზიტიური განწყობა. დანარჩენი ყველა პროფესიონალური ინვენტარით ვუზრუნველყოფთ ჩვენ."
+  },
+  {
+    id: 7,
+    question: "რა ხდება, თუ ფეხბურთელს ვარჯიშის გაცდენა მოუწია?",
+    answer:
+      "ვარჯიშის გაცდენის შესახებ მინიმუმ რამდენიმე საათით ან დღით ადრე შეატყობინეთ მწვრთნელს, სესია არ იკარგება და გადადის თქვენთვის მოსახერხებელ სხვა დროზე."
+  },
+  {
+    id: 8,
+    question: "როგორ შემიძლია ვარჯიშზე ჩაწერა ან ჯავშნის გაკეთება?",
+    answer:
+      "ვარჯიშზე ჩასაწერად შეგიძლიათ შეავსოთ საიტზე არსებული სარეგისტრაციო ფორმა, ან პირდაპირ დაგვიკავშირდეთ მითითებულ ნომერზე / სოციალურ ქსელებში. ჩვენ შევარჩევთ თქვენთვის მოსახერხებელ დროსა და გრაფიკს."
   }
 ];
 
@@ -41,8 +59,8 @@ const faqItems = [
 const Faq = () => {
   return (
     <section className='pt-20 pb-20 px-5    max-w-380 w-full mx-auto'>
-        <h2 className='text-gray-500 uppercase texxt-justify text-3xl md:text-6xl font-extrabold mb-10 lg:mb-15'>
-            Frequently Asked <br/> <span className='text-black'>Questions</span>
+        <h2 className='text-gray-500 uppercase texxt-justify text-3xl md:text-6xl font-bold mb-10 lg:mb-15 '>
+            ხშირად დასმული <br/> <span className='text-black'>კითხვები</span>
         </h2>
         <div className='flex gap-5  flex-col items-center lg:flex-row lg:justify-between lg:gap-15'>
         <Accordion accordionItems={faqItems} />
