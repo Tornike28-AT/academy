@@ -5,7 +5,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
-      <video
+      {/* <video
         className="absolute inset-0 w-full h-full object-cover"
         src="/intro.mp4"
         poster="/images/hero-poster.jpg"
@@ -13,7 +13,7 @@ const Hero = () => {
         muted
         loop
         playsInline
-      />
+      /> */}
       <div className="absolute inset-0 bg-black/70" />
 
       <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
