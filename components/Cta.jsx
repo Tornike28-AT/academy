@@ -18,7 +18,7 @@ const Cta = () => {
 </p>
             <ul className="text-lg font-medium text-zinc-600">
               <li className="flex items-center gap-2"><FaPhoneAlt size={20}className="text-[#158F3C]"/>+995 555 123 456 789</li>
-              <li className="flex items-center gap-2"><IoMdMail size={20}className="text-[#158F3C]"/>Example@gmail.com</li>
+              <Link href="mailTo:tsaava.individual.academy@gmail.com" className="flex items-center gap-2"><IoMdMail size={20}className="text-[#158F3C]"/>tsaava.individual.academy@gmail.com</Link>
               <li className="flex items-center gap-2"><FaLocationDot size={20}className="text-[#158F3C]"/> 182 Davit Aghmashenebeli Ave, Tbilisi</li>
             </ul>
 
