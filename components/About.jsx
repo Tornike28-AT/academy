@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="pt-20 px-5 lg:px-15 xl:px-0 max-w-380 w-full mx-auto">
+    <section className="pt-20 px-5 lg:px-15 xl:px-5 max-w-380 w-full mx-auto">
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between lg:gap-10">
         <div className="max-w-165 w-full shrink space-y-5 flex flex-col justify-center">
           <p className="capitalize  text-zinc-500 text-lg font-medium">ჩვენ შესახებ</p>
