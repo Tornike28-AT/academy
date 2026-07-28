@@ -11,8 +11,8 @@ const cards = [
   },
   {
     id: 2,
-    title: "პროგრესი და შედეგები",
-    desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
+    title: "ჯანმრთელობა და უსაფრთხოება",
+    desc: "განსაკუთრებულ ყურადღებას ვუთმობთ ტრავმების პრევენციას, სწორ ფიზიკურ დატვირთვასა და ჯანსაღი ცხოვრების წესის ჩამოყალიბებას, რათა სპორტსმენის განვითარება იყოს უსაფრთხო და ჰარმონიული.",
     imgUrl: "https://placehold.co/154x220",
   },
   {
@@ -23,8 +23,8 @@ const cards = [
   },
   {
     id: 4,
-    title: "Communirty & Growth",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "პროგრესი და შედეგები",
+    desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
     imgUrl: "https://placehold.co/154x220",
   },
 ];
@@ -47,7 +47,7 @@ const Cards = () => {
         >
           <div className="flex-1 space-y-3">
             <div className="flex items-center justify-between w-full">
-              <h3 className="text-xl lg:text-2xl font-medium">{card.title}</h3>
+              <h3 className="text-2xl lg:text-3xl font-medium">{card.title}</h3>
               <GoArrowUpRight
                 size={40}
                 className={`bg-zinc-400/20 rounded-full p-2 ml-auto shrink-0 ${activeCard === card.id? "hidden" : ""}`}

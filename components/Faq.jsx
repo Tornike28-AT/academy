@@ -58,8 +58,8 @@ const faqItems = [
 
 const Faq = () => {
   return (
-    <section className='pt-20 pb-20 px-5    max-w-380 w-full mx-auto'>
-        <h2 className='text-gray-500 uppercase texxt-justify text-3xl md:text-6xl font-bold mb-10 lg:mb-15 '>
+    <section className='pt-20 pb-20 px-5 lg:px-15 xl:px-0   max-w-380 w-full mx-auto'>
+        <h2 className='text-gray-500 uppercase  text-4xl md:text-6xl  mb-5'>
             ხშირად დასმული <br/> <span className='text-black'>კითხვები</span>
         </h2>
         <div className='flex gap-5  flex-col items-center lg:flex-row lg:justify-between lg:gap-15'>

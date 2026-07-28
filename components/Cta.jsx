@@ -9,11 +9,10 @@ import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
 const Cta = () => {
   return (
     <section className=" max-w-380 w-full mx-auto px-5   ">
-      <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between">
+      <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between gap-5">
         <div className=" space-y-10 flex flex-col justify-center">
-         <h2 className="text-gray-500 uppercase text-3xl md:text-6xl font-extrabold mb-9 leading-18">
-  გახსენი შენი პოტენციალი — <br />
-  <span className="text-black">ივარჯიშე ჩვენთან!</span>
+         <h2 className="text-gray-500 uppercase  text-4xl md:text-6xl  mb-5">
+  გახსენი შენი პოტენციალი <span className="text-black">ივარჯიშე ჩვენთან!</span>
 </h2>
             <p className="w-full max-w-150 text-lg  md:text-xl leading-8 text-justify mb-10">გადადგით პირველი ნაბიჯი იმისკენ, რომ გახდეთ უფრო ძლიერი, ჭკვიანი და თავდაჯერებული მოთამაშე. დაგვიკავშირდით დღესვე, რათა მიიღოთ დამატებითი ინფორმაცია ან დაჯავშნოთ პირველი ვარჯიში.
 </p>
@@ -44,8 +43,8 @@ const Cta = () => {
             ვარჯიშების დაჯავშნა
           </button>
         </div>
-        <div className=" flex justify-center relative max-w-120 w-full lg:block">
-            <Image src="/mobile.png" alt="instagram mobile screen" width={355} height={711} className="w-[355px] h-"/>
+        <div className=" flex justify-center relative max-w-165 w-full lg:block">
+            <img src={"https://placehold.co/550x450"} alt="" className="z-5  w-full" />
         </div>
       </div>
     </section>

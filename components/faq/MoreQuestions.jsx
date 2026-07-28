@@ -11,7 +11,7 @@ const MoreQuestions = () => {
         <div className='flex flex-col items-center space-y-10'>
         <AiFillMessage size={50}  className='text-emerald-700'/> 
         <div className='space-y-4'>
-        <h3 className='text-2xl text-center font-bold'>გაქვთ კითხვები?</h3>
+        <h3 className='text-2xl text-center '>გაქვთ კითხვები?</h3>
         <p className='text-center'>ჩვენი სამწვრთნელო გუნდი მზადაა, დაგეხმაროთ და მოგაწოდოთ ნებისმიერი დამატებითი ინფორმაცია ვარჯიშებთან, განრიგსა და რეგისტრაციასთან დაკავშირებით.</p>
         </div>
         </div>
