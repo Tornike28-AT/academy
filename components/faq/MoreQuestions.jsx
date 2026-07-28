@@ -15,9 +15,8 @@ const MoreQuestions = () => {
         <p className='text-center'>ჩვენი სამწვრთნელო გუნდი მზადაა, დაგეხმაროთ და მოგაწოდოთ ნებისმიერი დამატებითი ინფორმაცია ვარჯიშებთან, განრიგსა და რეგისტრაციასთან დაკავშირებით.</p>
         </div>
         </div>
-        <Link href={"tel:"} className='self-center flex items-center gap-1 bg-emerald-700 p-6 text-white rounded-lg'><BsTelephoneFill />555 123 456 789</Link>
+        <Link href="tel:+995 551 07 93 46" className='self-center flex items-center gap-1 bg-emerald-700 p-6 text-white rounded-lg cursor-pointer hover:bg-emerald-600 hover:-translate-y-0.5 transition-all duration-300'><BsTelephoneFill />+995 551 07 93 46</Link>
     </div>
   )
 }
-
 export default MoreQuestions

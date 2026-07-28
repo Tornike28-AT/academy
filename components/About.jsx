@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
             <br/><br/>
            აკადემიის დამფუძნებელია ვალერი ცაავა — ყოფილი ფეხბურთელი და მოქმედი მწვრთნელი, რომელსაც სამ წელზე მეტი პრაქტიკული გამოცდილება აქვს. ჩვენი მიზანია, პროფესიონალური მიდგომით, დისციპლინითა და ხარისხიანი ვარჯიშებით დავეხმაროთ თითოეულ ფეხბურთელს საკუთარი პოტენციალის სრულად გამოვლენაში.
           </p>
-          <button className="self-start bg-green-600 px-10 py-4 rounded-md  text-white font-medium">კონტაქტი</button>
+          <Link href="#contact" className="self-start bg-green-600 px-10 py-4 rounded-md  text-white font-medium cursor-pointer hover:bg-green-500 hover:-translate-y-0.5 transition-all duration-300">კონტაქტი</Link>
         </div>
         <div className="max-w-165 w-full relative  flex flex-col items-center ">
           <img src={"https://placehold.co/469x467"} alt="" className="z-5  w-full" />

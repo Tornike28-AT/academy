@@ -14,7 +14,7 @@ const Accordion = ({ accordionItems }) => {
           <div
             key={item.id}
             className={clsx(
-              "rounded-lg overflow-hidden transition-colors duration-300",
+              "rounded-lg overflow-hidden transition-colors duration-300 ",
               isActive ? "bg-[#1C7C3A]" : "border border-zinc-400"
             )}
           >
@@ -24,10 +24,10 @@ const Accordion = ({ accordionItems }) => {
               onClick={() => setActiveAccordion(item.id)}
              
               className={clsx(
-                "w-full flex items-center justify-between gap-4 text-left text-2xl font-bold py-5 px-2 rounded-lg transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+                "w-full flex items-center justify-between gap-4 text-left text-2xl font-bold py-5 px-2 rounded-lg transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  cursor-pointer",
                 isActive
                   ? "text-white focus-visible:ring-white"
-                  : "text-black hover:bg-black/3 focus-visible:ring-black"
+                  : "text-black hover:bg-zinc-100 focus-visible:ring-black "
               )}
             >
               <span className="flex items-center gap-2 text-[16px] lg:text-xl ">

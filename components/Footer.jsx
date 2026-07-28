@@ -4,6 +4,32 @@ import { FaFacebookF, FaFacebookSquare, FaInstagram, FaInstagramSquare, FaLinked
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 
+
+const socialLinks = [
+  { icon: FaInstagram, href: "https://instagram.com/tsaava_individual_academy", hoverClass: "hover:bg-[#D62976]" },
+  { icon: FaFacebookF, href: "https://www.facebook.com/groups/1595165332197585", hoverClass: "hover:bg-[#1877F2]" },
+  { icon: FaTiktok, href: "https://www.tiktok.com/@tsaavaindividualacademy", hoverClass: "hover:bg-[#FE2C55]" },
+  { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/tsaava-individual-academy-6282a0378/", hoverClass: "hover:bg-[#0A66C2]" },
+  { icon: IoLogoWhatsapp, href: "https://wa.me/995551079346", hoverClass: "hover:bg-[#29D487]" },
+];
+
+const SocialLinks = ({ links = socialLinks, size = 20 }) => {
+  return (
+    <div className="flex justify-center lg:justify-start lg:items-start gap-3">
+      {links.map(({ icon: Icon, href, hoverClass }, index) => (
+        <Link
+          key={index}
+          href={href}
+          className={`flex p-2 ring-1 rounded-full transition-colors text-white ${hoverClass}`}
+        >
+          <Icon size={size} />
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+
 export default function Footer() {
   return (
     <section className=" w-full h-auto flex flex-col justify-center items-center space-y-12 bg-black ">
@@ -17,23 +43,7 @@ export default function Footer() {
             <Link href="" className="text-white font-bold">FAQ</Link>
             <Link href="" className="text-white font-bold">Contact</Link>
         </div>
-        <div className="flex items-start gap-3">
-            <Link href={"#"} className="text-white flex p-2 ring-1 rounded-full transition-colors hover:bg-[#D62976]">
-              <FaInstagram size={20} />
-            </Link>
-            <Link href={"#"} className=" text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#1877F2]">
-              <FaFacebookF  size={20} />
-            </Link>
-             <Link href={"#"} className=" text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#FE2C55]">
-              <FaTiktok  size={20} />
-            </Link>
-            <Link href={"#"} className="text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#0A66C2]">
-              <FaLinkedinIn  size={20} />
-            </Link>
-            <Link href={"#"} className="text-white p-2 ring-1 rounded-full transition-colors hover:bg-[#29D487]">
-              <IoLogoWhatsapp size={20} />
-            </Link>
-          </div>
+        <SocialLinks />
         <div className=" w-full flex flex-col justify-center items-center  pb-2 md:flex md:flex-row md:justify-between md:px-10 lg:px-30">
             <p className="text-gray-400 flex">Created by <span className="text-white ml-2">AT Studio</span></p>
             <p className="text-gray-400 ">© 2026 All Rights Reserved</p>

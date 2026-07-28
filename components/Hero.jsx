@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
@@ -33,12 +34,19 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex justify-center items-center gap-6 mt-6">
-          <button className="bg-green-500 pt-2.5 pb-2.5 pl-6 pr-6 rounded-3xl font-bold md:text-[23px] lg:text-[18px] cursor-pointer">
-            კონტაქტი
-          </button>
-          <button className="bg-white pt-2.5 pb-2.5 pl-6 pr-6 rounded-3xl font-bold md:text-[23px] lg:text-[18px] cursor-pointer">
-            გაიგე მეტი
-          </button>
+        <Link 
+    href="#contact" 
+    className="bg-emerald-500 hover:bg-emerald-600 text-white py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0"
+  >
+    კონტაქტი
+  </Link>
+
+  {/* Secondary Button */}
+  <button 
+    className="bg-white/90 hover:bg-white text-gray-800 hover:text-black border border-gray-200/80 backdrop-blur-sm py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+  >
+    გაიგე მეტი
+  </button>
         </div>
         <Image
           src="/logo.png"

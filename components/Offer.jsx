@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./offer-cards/Cards";
+import Link from "next/link";
 
 const Offer = () => {
   return (
@@ -16,7 +17,7 @@ const Offer = () => {
         
         <div className="max-w-165 w-full space-y-10 ">
             <Cards/>
-        <button className="bg-green-600 px-10 py-4 text-white font-medium">კონტაქტი</button>
+        <Link  href="#contact" className="bg-green-600 px-10 py-4 text-white font-medium  cursor-pointer hover:bg-green-500 hover:-translate-y-0.5 transition-all duration-300">კონტაქტი</Link>
         </div>
             <img src="https://placehold.co/572x388" alt="" className="block md:hidden w-full max-w-165" />
         </div>
