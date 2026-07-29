@@ -83,7 +83,8 @@ const Cta = () => {
         {/* 550 450 */}
         <div className=" flex justify-center relative max-w-165 w-full lg:block">
           <Image
-            src="/images/IMAGE-10.jpg"
+            src="/images/IMAGE-10.webp"
+            loading="lazy"
             alt=""
             width={550}
             height={450}

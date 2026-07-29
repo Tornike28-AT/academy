@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="max-w-155 w-full relative  flex flex-col items-center ">
 
-          <Image src="/images/IMAGE-1.jpeg" alt="Coach photo" width={3024} height={4032} className="z-5  w-full rounded-2xl " />
+          <Image src="/images/IMAGE-1.webp" loading="lazy" alt="Coach photo" width={3024} height={4032} className="z-5  w-full rounded-2xl " />
 
         </div>
       </div>

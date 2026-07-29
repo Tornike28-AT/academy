@@ -9,7 +9,7 @@ const Hero = () => {
       <video
         className="absolute inset-0 w-full h-full object-cover"
         src="/videos/hero.mp4"
-        poster="/images/hero-poster.jpg"
+        poster="/poster.jpg"
         autoPlay
         muted
         loop
@@ -49,7 +49,8 @@ const Hero = () => {
   </button>
         </div>
         <Image
-          src="/logo.png"
+          src="/logo.webp"
+          loading="lazy"
           alt="Tsaava Individual Academy"
           width={879}
           height={414}

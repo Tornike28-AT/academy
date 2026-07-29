@@ -21,7 +21,7 @@ export default function WhyUs() {
       </div>
       {/* 572 700 */}
       <div className=" w-full relative max-w-165">
-        <Image src="/images/IMAGE-11.jpeg" alt="" width={4284} height={5712} className="rounded-2xl w-full" />
+        <Image src="/images/IMAGE-11.webp" loading="lazy" alt="" width={4284} height={5712} className="rounded-2xl w-full" />
       </div>   
     </section>
   );

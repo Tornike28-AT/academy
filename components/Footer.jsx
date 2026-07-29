@@ -34,14 +34,14 @@ export default function Footer() {
   return (
     <section className=" w-full h-auto flex flex-col justify-center items-center space-y-12 bg-black ">
         <div className="mt-5 relative">
-            <Image src="/logo.png" alt="Tsaava Individual Academy" width={879} height={414} className=" w-50.75 lg:w-60.75 lg:h-28.5" />
+            <Image src="/logo.webp" loading="lazy" alt="Tsaava Individual Academy" width={879} height={414} className=" w-50.75 lg:w-60.75 lg:h-28.5" />
         </div>
         <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:gap-10">
-            <Link href="" className="text-white font-bold">Home</Link>
-            <Link href="" className="text-white font-bold">About</Link>
-            <Link href="" className="text-white font-bold">Offer</Link>
+            <Link href="" className="text-white font-bold">მთავარი</Link>
+            <Link href="" className="text-white font-bold">ჩვენ შესახებ</Link>
+            <Link href="" className="text-white font-bold">რატომ ცაავას აკადემია</Link>
             <Link href="" className="text-white font-bold">FAQ</Link>
-            <Link href="" className="text-white font-bold">Contact</Link>
+            <Link href="" className="text-white font-bold">კონტაქტი</Link>
         </div>
         <SocialLinks />
         <div className=" w-full flex flex-col justify-center items-center  pb-2 md:flex md:flex-row md:justify-between md:px-10 lg:px-30">

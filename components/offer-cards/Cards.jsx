@@ -8,13 +8,13 @@ const cards = [
     id: 1,
     title: "ინფრასტრუქტურა და აღჭურვილობა",
     desc: "თანამედროვე სავარჯიშო ინვენტარი, კოორდინაციისა და სისწრაფის აღჭურვილობა. ვარჯიშები ტარდება „იმედის“ სტადიონზე (მუშტაიდის ბაღთან).",
-    imgUrl: "/images/IMAGE-3.jpeg",
+    imgUrl: "/images/IMAGE-3.webp",
   },
   {
     id: 2,
     title: "ჯანმრთელობა და უსაფრთხოება",
     desc: "განსაკუთრებულ ყურადღებას ვუთმობთ ტრავმების პრევენციას, სწორ ფიზიკურ დატვირთვასა და ჯანსაღი ცხოვრების წესის ჩამოყალიბებას, რათა სპორტსმენის განვითარება იყოს უსაფრთხო და ჰარმონიული.",
-    imgUrl: "/images/IMAGE-8.jpeg",
+    imgUrl: "/images/IMAGE-8.webp",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const cards = [
     id: 4,
     title: "პროგრესი და შედეგები",
     desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
-    imgUrl: "/images/IMAGE-13.jpg",
+    imgUrl: "/images/IMAGE-13webp",
   },
 ];
 
@@ -57,7 +57,7 @@ const Cards = () => {
             {activeCard === card.id && <p className="text-sm lg:text-lg">{card.desc}</p>}
           </div>
                           
-          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} alt="" className="min-h-45 rounded-lg" />}
+          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="lazy" alt="" className="min-h-45 rounded-lg" />}
         </div>
       ))}
     </div>

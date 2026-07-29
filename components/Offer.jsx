@@ -20,7 +20,7 @@ const Offer = () => {
             <Cards/>
         <Link  href="#contact" className="bg-green-600 px-10 py-4 text-white font-medium  cursor-pointer hover:bg-green-500 hover:-translate-y-0.5 transition-all duration-300">კონტაქტი</Link>
         </div>
-            <Image src="/images/IMAGE-7.jpeg" alt="" width={4032} height={3024} className="block md:hidden w-full max-w-165 rounded-2xl" />
+            <Image src="/images/IMAGE-7.webp" loading="lazy" alt="" width={4032} height={3024} className="block md:hidden w-full max-w-165 rounded-2xl" />
         </div>
       
     </section>
