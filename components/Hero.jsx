@@ -1,15 +1,31 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Hero = () => {
+  const container = {
+    hidden: {},
+    show: {
+      transition: { staggerChildren: 0.15 },
+    },
+  };
+
+  const line = {
+    hidden: { opacity: 0, y: 60 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+const MotionLink = motion.create(Link);
+
   return (
     <section className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         src="/videos/hero.mp4"
-        poster="/poster.jpg"
+        poster="/poster.webp"
         autoPlay
         muted
         loop
@@ -19,38 +35,76 @@ const Hero = () => {
 
       <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
-          <h1 className=" text-center text-white text-[30px]  md:text-[40px] lg:text-[55px]">
-            პირადი მიდგომა. <br/>
-            რეალური შედეგები. <br/>
-            შენი სეზონი <span className="text-green-400">იწყება აქ!</span>
-          </h1>      
+          <motion.h1
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            className="text-center text-white text-[30px] md:text-[40px] lg:text-[55px]"
+          >
+            <motion.span variants={line} className="block">
+              პირადი მიდგომა.
+            </motion.span>
+            <motion.span variants={line} className="block">
+              რეალური შედეგები.
+            </motion.span>
+            <motion.span variants={line} className="block">
+              შენი სეზონი <span className="text-green-400">იწყება აქ!</span>
+            </motion.span>
+          </motion.h1>
         </div>
         <div className="flex justify-center items-center text-center flex-col">
-          <p className="text-white  font-bold text-[16px] md:text-[18px] lg:text-[20px] px-3">
+          <motion.p
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-white  font-bold text-[16px] md:text-[18px] lg:text-[20px] px-3"
+          >
             პროფესიონალური ინდივიდუალური ვარჯიში
-          </p>
-          <p className="text-white  font-bold text-[16px]  md:text-[18px] lg:text-[20px] px-3">
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-white  font-bold text-[16px]  md:text-[18px] lg:text-[20px] px-3"
+          >
             ყველა ასაკისთვის & ყველა დონისთვის
-          </p>
+          </motion.p>
         </div>
         <div className="flex justify-center items-center gap-6 mt-6">
-        <Link 
-    href="#contact" 
-    className="bg-emerald-500 hover:bg-emerald-600 text-white py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0"
-  >
-    კონტაქტი
-  </Link>
+          <MotionLink
+            href="#contact"
+            initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="bg-emerald-500 hover:bg-emerald-600 text-white py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40"
+          >
+            დაიწყე ახლავე
+          </MotionLink>
 
-  {/* Secondary Button */}
-  <button 
-    className="bg-white/90 hover:bg-white text-gray-800 hover:text-black border border-gray-200/80 backdrop-blur-sm py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-  >
-    გაიგე მეტი
-  </button>
+          <motion.button
+            initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+            }}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="bg-white/90 hover:bg-white text-gray-800 hover:text-black border border-gray-200/80 backdrop-blur-sm py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg shadow-sm hover:shadow-md cursor-pointer"
+          >
+            გაიგე მეტი
+          </motion.button>
         </div>
         <Image
           src="/logo.webp"
-          loading="lazy"
+          loading="eager"
           alt="Tsaava Individual Academy"
           width={879}
           height={414}

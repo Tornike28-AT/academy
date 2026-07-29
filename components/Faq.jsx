@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Accordion from './faq/Accordion'
 import MoreQuestions from './faq/MoreQuestions';
+import { motion } from "framer-motion";
 
 
 const faqItems = [
@@ -60,9 +62,17 @@ const Faq = () => {
   return (
     <section className='mt-0 md:mt-30 mb-20 px-5 lg:px-15 xl:px-5   max-w-380 w-full mx-auto'>
       <div className="flex flex-col items-start gap-6 md:mt-18 max-lg:max-w-165 w-full mx-auto">
-        <h2 className='text-gray-500 uppercase  text-4xl md:text-6xl  mb-5'>
+        <motion.h2 
+         initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+            }}
+        className='text-gray-500 uppercase  text-4xl md:text-6xl  mb-5'>
             ხშირად დასმული <br/> <span className='text-black'>კითხვები</span>
-        </h2>
+        </motion.h2>
         <div className=' flex gap-5  flex-col items-center lg:flex-row lg:justify-between lg:gap-15'>
         <Accordion accordionItems={faqItems} />
         <MoreQuestions />

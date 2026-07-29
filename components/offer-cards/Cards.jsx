@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { motion } from "motion/react";
 
 const cards = [
   {
@@ -26,9 +27,10 @@ const cards = [
     id: 4,
     title: "პროგრესი და შედეგები",
     desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
-    imgUrl: "/images/IMAGE-13webp",
+    imgUrl: "/images/IMAGE-13.webp",
   },
 ];
+
 
 
 // PHOTO SIZES 
@@ -41,9 +43,13 @@ const Cards = () => {
   return (
     <div className="  w-full border-t border-zinc-200">
       {cards.map((card, index) => (
-        <div
+        <motion.div
           key={index}
           onClick={() => setActiveCard(card.id)}
+          initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           className="flex items-center gap-5 w-full justify-between py-6 border-b border-zinc-200 cursor-pointer"
         >
           <div className="flex-1 space-y-3">
@@ -57,8 +63,8 @@ const Cards = () => {
             {activeCard === card.id && <p className="text-sm lg:text-lg">{card.desc}</p>}
           </div>
                           
-          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="lazy" alt="" className="min-h-45 rounded-lg" />}
-        </div>
+          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="eager" alt="" className=" rounded-lg" />}
+        </motion.div>
       ))}
     </div>
   );

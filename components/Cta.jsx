@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,6 +11,8 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
+import { motion } from "framer-motion";
+
 
 const socialLinks = [
   { icon: FaInstagram, href: "https://instagram.com/tsaava_individual_academy", hoverClass: "hover:bg-[#D62976]" },
@@ -34,11 +37,24 @@ const SocialLinks = ({ links = socialLinks, size = 20 }) => {
   );
 };
 
+
+
 const Cta = () => {
+
+const MotionLink = motion.create(Link);
+
   return (
     <section id="contact" className=" max-w-380 w-full mx-auto px-5  mb-10">
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between gap-5">
-        <div className=" space-y-10 flex flex-col justify-center">
+        <motion.div 
+         initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+            }}
+        className=" space-y-10 flex flex-col justify-center">
           <h2 className="text-gray-500 uppercase  text-4xl md:text-6xl  mb-5">
             გახსენი შენი პოტენციალი{" "}
             <span className="text-black">ივარჯიშე ჩვენთან!</span>
@@ -76,21 +92,38 @@ const Cta = () => {
 
           <SocialLinks />
 
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSetUn0AQz4DNajrt0JncPcD3JOA2lbXlg4gpbM-wwj5rLnJRw/viewform?usp=dialog" className="self-center lg:self-start bg-green-600 px-10 py-4  text-white font-medium cursor-pointer hover:bg-green-500 hover:-translate-y-0.5 transition-all duration-300">
-            ვარჯიშების დაჯავშნა
-          </Link>
-        </div>
+          <MotionLink
+            href="https://docs.google.com/forms/d/e/1FAIpQLSetUn0AQz4DNajrt0JncPcD3JOA2lbXlg4gpbM-wwj5rLnJRw/viewform?usp=dialog"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="self-center lg:self-start bg-green-600 px-10 py-4  text-white font-medium cursor-pointer hover:bg-green-500 "
+          >
+            დაიწყე ახლავე
+          </MotionLink>
+        </motion.div>
         {/* 550 450 */}
-        <div className=" flex justify-center relative max-w-165 w-full lg:block">
+        <motion.div 
+        initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+            }}
+        className=" flex justify-center relative max-w-165 w-full lg:block">
           <Image
             src="/images/IMAGE-10.webp"
-            loading="lazy"
+            loading="eager"
             alt=""
             width={550}
             height={450}
             className="z-5  w-full rounded-2xl"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

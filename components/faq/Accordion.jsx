@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { motion } from "framer-motion";
+
 
 const Accordion = ({ accordionItems }) => {
   const [activeAccordion, setActiveAccordion] = useState(1);
@@ -11,7 +13,14 @@ const Accordion = ({ accordionItems }) => {
       {accordionItems.map((item) => {
         const isActive = activeAccordion === item.id;
         return (
-          <div
+          <motion.div
+           initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+            }}
             key={item.id}
             className={clsx(
               "rounded-lg overflow-hidden transition-colors duration-300 ",
@@ -65,7 +74,7 @@ const Accordion = ({ accordionItems }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </div>
