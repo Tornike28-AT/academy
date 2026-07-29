@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CardsWhyUs from "./whyUs/CardsWhyUs";
+import Image from "next/image";
 
 export default function WhyUs() {
 
@@ -18,8 +19,9 @@ export default function WhyUs() {
         
         <Link href="https://docs.google.com/forms/d/e/1FAIpQLSetUn0AQz4DNajrt0JncPcD3JOA2lbXlg4gpbM-wwj5rLnJRw/viewform?usp=dialog" className="p-4 bg-green-600 rounded text-white font-bold cursor-pointer hover:bg-green-500 hover:-translate-y-0.5 transition-all duration-300">დარეგისტრირდი!</Link>
       </div>
+      {/* 572 700 */}
       <div className=" w-full relative max-w-165">
-        <img src="https://placehold.co/572x700" alt="" className="rounded w-full" />
+        <Image src="/images/IMAGE-11.jpeg" alt="" width={4284} height={5712} className="rounded-2xl w-full" />
       </div>   
     </section>
   );

@@ -17,8 +17,9 @@ const About = () => {
           </p>
           <Link href="#contact" className="self-start bg-green-600 px-10 py-4 rounded-md  text-white font-medium cursor-pointer hover:bg-green-500 hover:-translate-y-0.5 transition-all duration-300">კონტაქტი</Link>
         </div>
-        <div className="max-w-165 w-full relative  flex flex-col items-center ">
-          <img src={"https://placehold.co/469x467"} alt="" className="z-5  w-full" />
+        <div className="max-w-155 w-full relative  flex flex-col items-center ">
+
+          <Image src="/images/IMAGE-1.jpeg" alt="Coach photo" width={3024} height={4032} className="z-5  w-full rounded-2xl " />
 
         </div>
       </div>

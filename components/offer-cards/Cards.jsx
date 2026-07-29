@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -7,25 +8,25 @@ const cards = [
     id: 1,
     title: "ინფრასტრუქტურა და აღჭურვილობა",
     desc: "თანამედროვე სავარჯიშო ინვენტარი, კოორდინაციისა და სისწრაფის აღჭურვილობა. ვარჯიშები ტარდება „იმედის“ სტადიონზე (მუშტაიდის ბაღთან).",
-    imgUrl: "https://placehold.co/154x220",
+    imgUrl: "/images/IMAGE-3.jpeg",
   },
   {
     id: 2,
     title: "ჯანმრთელობა და უსაფრთხოება",
     desc: "განსაკუთრებულ ყურადღებას ვუთმობთ ტრავმების პრევენციას, სწორ ფიზიკურ დატვირთვასა და ჯანსაღი ცხოვრების წესის ჩამოყალიბებას, რათა სპორტსმენის განვითარება იყოს უსაფრთხო და ჰარმონიული.",
-    imgUrl: "https://placehold.co/154x220",
+    imgUrl: "/images/IMAGE-8.jpeg",
   },
   {
     id: 3,
     title: "მენტალიტეტი და საზოგადოება",
     desc: "ვასწავლით დისციპლინას, პასუხისმგებლობას, შრომისმოყვარეობას, თავდაჯერებულობას, პატივისცემას და გამარჯვებულის მენტალიტეტს — თვისებებს, რომლებიც როგორც სპორტში, ისე ცხოვრებაში ეხმარებათ.",
-    imgUrl: "https://placehold.co/154x220",
+    imgUrl: "",
   },
   {
     id: 4,
     title: "პროგრესი და შედეგები",
     desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
-    imgUrl: "https://placehold.co/154x220",
+    imgUrl: "/images/IMAGE-13.jpg",
   },
 ];
 
@@ -56,7 +57,7 @@ const Cards = () => {
             {activeCard === card.id && <p className="text-sm lg:text-lg">{card.desc}</p>}
           </div>
                           
-          {activeCard === card.id && <img src={card.imgUrl} alt="" />}
+          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} alt="" className="min-h-45 rounded-lg" />}
         </div>
       ))}
     </div>

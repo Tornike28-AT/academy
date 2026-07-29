@@ -80,11 +80,14 @@ const Cta = () => {
             ვარჯიშების დაჯავშნა
           </Link>
         </div>
+        {/* 550 450 */}
         <div className=" flex justify-center relative max-w-165 w-full lg:block">
-          <img
-            src={"https://placehold.co/550x450"}
+          <Image
+            src="/images/IMAGE-10.jpg"
             alt=""
-            className="z-5  w-full"
+            width={550}
+            height={450}
+            className="z-5  w-full rounded-2xl"
           />
         </div>
       </div>
