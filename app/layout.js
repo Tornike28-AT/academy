@@ -28,7 +28,7 @@ const geoHakuna = localFont({
 
 
 export const metadata = {
-  metadataBase: new URL("https://academy.tsaava-individual-academy.workers.dev"),
+  metadataBase: new URL("https://tsaavaacademy.ge"),
   // Swap in your real domain once purchased — metadataBase auto-prefixes all og:image/canonical URLs below
 
   title: "ინდივიდუალური საფეხბურთო ვარჯიშები თბილისში | Tsaava Academy",
