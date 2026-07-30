@@ -14,7 +14,7 @@ const Offer = () => {
 
 
   return (
-    <section className="mt-28 mb-25   max-w-380 w-full mx-auto">
+    <section className="mt-28 mb-25   max-w-380 w-full mx-auto overflow-x-clip">
       <div className="flex flex-col px-5 lg:px-15 xl:px-5 items-center space-y-5 lg:flex-row lg:justify-between gap-5">
         <div className="relative max-w-165 w-full">
             <motion.h2
@@ -65,7 +65,7 @@ const Offer = () => {
           </MotionLink>
 
         </div>
-            <Image src="/images/IMAGE-7.webp" loading="eager" alt="" width={1920} height={1080} className="block md:hidden w-full max-w-165 rounded-2xl" />
+            <Image src="/images/IMAGE-7.webp" loading="eager" alt="Coach training image" width={1920} height={1080} className="block md:hidden w-full max-w-165 rounded-2xl" />
         </div>
       
     </section>

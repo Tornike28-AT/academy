@@ -44,7 +44,7 @@ const Cta = () => {
 const MotionLink = motion.create(Link);
 
   return (
-    <section id="contact" className=" max-w-380 w-full mx-auto px-5  mb-10">
+    <section id="contact" className=" max-w-380 w-full mx-auto px-5  mb-10 overflow-x-clip">
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between gap-5">
         <motion.div 
          initial={{ opacity: 0, x: 70 }}
@@ -118,7 +118,7 @@ const MotionLink = motion.create(Link);
           <Image
             src="/images/IMAGE-10.webp"
             loading="eager"
-            alt=""
+            alt="stadium with players image"
             width={550}
             height={450}
             className="z-5  w-full rounded-2xl"

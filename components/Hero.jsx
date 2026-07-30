@@ -82,7 +82,7 @@ const MotionLink = motion.create(Link);
             transition={{ duration: 0.7, ease: "easeOut" }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
-            className="bg-emerald-500 hover:bg-emerald-600 text-white py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40"
+            className="bg-emerald-500 hover:bg-emerald-600 text-white py-3 px-5  md:py-3 md:px-7 rounded-full font-bold text-base md:text-xl lg:text-lg shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40"
           >
             დაიწყე ახლავე
           </MotionLink>
@@ -97,7 +97,7 @@ const MotionLink = motion.create(Link);
             }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
-            className="bg-white/90 hover:bg-white text-gray-800 hover:text-black border border-gray-200/80 backdrop-blur-sm py-3 px-7 rounded-full font-bold text-base md:text-xl lg:text-lg shadow-sm hover:shadow-md cursor-pointer"
+            className="bg-white/90 hover:bg-white text-gray-800 hover:text-black border border-gray-200/80 backdrop-blur-sm  py-3 px-5  md:py-3 md:px-7 rounded-full font-bold text-base md:text-xl lg:text-lg shadow-sm hover:shadow-md cursor-pointer"
           >
             გაიგე მეტი
           </motion.button>
@@ -105,7 +105,7 @@ const MotionLink = motion.create(Link);
         <Image
           src="/logo.webp"
           loading="eager"
-          alt="Tsaava Individual Academy"
+          alt="Tsaava Individual Academy Logo"
           width={879}
           height={414}
           className="w-50.75 lg:w-60.75 lg:h-28.5 absolute bottom-2 lg:bottom-10 lg:right-10"

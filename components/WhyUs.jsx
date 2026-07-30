@@ -8,7 +8,7 @@ export default function WhyUs() {
   const MotionLink = motion.create(Link);
 
   return (
-    <section className="max-w-380 mx-auto w-full px-5 lg:px-15 xl:px-5  mb-20 flex flex-col items-start gap-10 md:flex md:items-center justify-between md:gap-20 lg:mb-0 lg:flex lg:flex-row ">
+    <section className="max-w-380 mx-auto w-full px-5 lg:px-15 xl:px-5  mb-20 flex flex-col items-start gap-10 md:flex md:items-center justify-between md:gap-20 lg:mb-0 lg:flex lg:flex-row overflow-x-clip">
       <div className="flex flex-col items-start gap-6 md:mt-18 max-w-165 w-full">
         <motion.p
           initial={{ opacity: 0, y: 70 }}
@@ -66,9 +66,9 @@ export default function WhyUs() {
         <Image
           src="/images/IMAGE-11.webp"
           loading="lazy"
-          alt=""
-          width={4284}
-          height={5712}
+          alt="ball and stadium image"
+          width={1920}
+          height={1080}
           className="rounded-2xl w-full"
         />
       </motion.div>

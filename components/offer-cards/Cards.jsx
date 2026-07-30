@@ -10,24 +10,31 @@ const cards = [
     title: "ინფრასტრუქტურა და აღჭურვილობა",
     desc: "თანამედროვე სავარჯიშო ინვენტარი, კოორდინაციისა და სისწრაფის აღჭურვილობა. ვარჯიშები ტარდება „იმედის“ სტადიონზე (მუშტაიდის ბაღთან).",
     imgUrl: "/images/IMAGE-3.webp",
+    alt:"training equipment"
   },
   {
     id: 2,
     title: "ჯანმრთელობა და უსაფრთხოება",
     desc: "განსაკუთრებულ ყურადღებას ვუთმობთ ტრავმების პრევენციას, სწორ ფიზიკურ დატვირთვასა და ჯანსაღი ცხოვრების წესის ჩამოყალიბებას, რათა სპორტსმენის განვითარება იყოს უსაფრთხო და ჰარმონიული.",
     imgUrl: "/images/IMAGE-8.webp",
+    alt:"Coach stretching"
+
   },
   {
     id: 3,
     title: "მენტალიტეტი და საზოგადოება",
     desc: "ვასწავლით დისციპლინას, პასუხისმგებლობას, შრომისმოყვარეობას, თავდაჯერებულობას, პატივისცემას და გამარჯვებულის მენტალიტეტს — თვისებებს, რომლებიც როგორც სპორტში, ისე ცხოვრებაში ეხმარებათ.",
     imgUrl: "",
+    alt:"Mental education"
+
   },
   {
     id: 4,
     title: "პროგრესი და შედეგები",
     desc: "ფეხბურთელის პროგრესს ვაფასებთ მწვრთნელის მუდმივი დაკვირვებით, ტექნიკური ანალიზითა და რეგულარული შეფასებით. ვადარებთ საწყის და მიმდინარე შედეგებს, რათა ფეხბურთელმა ნათლად დაინახოს საკუთარი განვითარება და შემდეგი მიზნები.",
     imgUrl: "/images/IMAGE-13.webp",
+    alt:"Football tactical board"
+
   },
 ];
 
@@ -63,7 +70,7 @@ const Cards = () => {
             {activeCard === card.id && <p className="text-sm lg:text-lg">{card.desc}</p>}
           </div>
                           
-          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="eager" alt="" className=" rounded-lg" />}
+          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="eager" alt={card.alt} className=" rounded-lg" />}
         </motion.div>
       ))}
     </div>
