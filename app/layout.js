@@ -31,8 +31,7 @@ export const metadata = {
   metadataBase: new URL("https://tsaavaacademy.ge"),
   // Swap in your real domain once purchased — metadataBase auto-prefixes all og:image/canonical URLs below
 
-  title: "ინდივიდუალური საფეხბურთო ვარჯიშები თბილისში | Tsaava Academy",
-  // ~58 chars, includes service + location keyword
+  title: "გახდი უკეთესი ფეხბურთელი | Tsaava Academy",
 
   description:
     "პროფესიონალური ინდივიდუალური საფეხბურთო ვარჯიშები თბილისში ყველა ასაკისა და დონისთვის. ტექნიკური, ფიზიკური და ტაქტიკური განვითარება პერსონალურად შენზე მორგებული.",
@@ -60,6 +59,7 @@ export const metadata = {
   "ფეხბურთის ინდივიდუალური პროგრამა",
   "ფეხბურთის განვითარება",
   "ფეხბურთის ტრენინგი",
+
 
   // ინგლისური
   "football training Tbilisi",
@@ -89,7 +89,7 @@ export const metadata = {
     title: "ინდივიდუალური საფეხბურთო ვარჯიშები თბილისში | Tsaava Academy",
     description:
       "პროფესიონალური ინდივიდუალური საფეხბურთო ვარჯიშები თბილისში ყველა ასაკისა და დონისთვის.",
-    url: "/",
+    url: "https://tsaavaacademy.ge",
     siteName: "Tsaava Individual Academy",
     images: [
       {

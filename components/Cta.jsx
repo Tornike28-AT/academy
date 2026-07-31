@@ -56,7 +56,7 @@ const MotionLink = motion.create(Link);
             }}
         className=" space-y-10 flex flex-col justify-center">
           <h2 className="text-gray-500 uppercase  text-4xl md:text-6xl  mb-5">
-            გახსენი შენი პოტენციალი{" "}
+            გამოავლინე შენი პოტენციალი{" "}
             <span className="text-black">ივარჯიშე ჩვენთან!</span>
           </h2>
           <p className="w-full max-w-150 text-lg  md:text-xl leading-8 text-justify mb-10">

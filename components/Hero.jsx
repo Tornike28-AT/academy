@@ -6,17 +6,7 @@ import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Hero = () => {
-  const container = {
-    hidden: {},
-    show: {
-      transition: { staggerChildren: 0.15 },
-    },
-  };
-
-  const line = {
-    hidden: { opacity: 0, y: 60 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
+ 
 
 const MotionLink = motion.create(Link);
 
@@ -36,19 +26,28 @@ const MotionLink = motion.create(Link);
       <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
           <motion.h1
-            variants={container}
-            initial="hidden"
-            whileInView="show"
+            initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="text-center text-white text-[30px] md:text-[40px] lg:text-[55px]"
           >
-            <motion.span variants={line} className="block">
+            <motion.span  initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeOut" }} className="block">
               პირადი მიდგომა.
             </motion.span>
-            <motion.span variants={line} className="block">
+            <motion.span  initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.9, ease: "easeOut" }} className="block">
               რეალური შედეგები.
             </motion.span>
-            <motion.span variants={line} className="block">
+            <motion.span  initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 1, ease: "easeOut" }} className="block">
               შენი სეზონი <span className="text-green-400">იწყება აქ!</span>
             </motion.span>
           </motion.h1>
