@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const geoHakuna = localFont({
   src: [
@@ -119,7 +120,20 @@ export default function RootLayout({ children }) {
       className={`${geoHakuna.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+      
 
+ <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-56MJ3P9MSF"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-56MJ3P9MSF');
+          `}
+        </Script>
         {children}
         <Footer />
       </body>
