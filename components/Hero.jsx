@@ -60,7 +60,7 @@ const MotionLink = motion.create(Link);
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-white  font-bold text-[16px] md:text-[18px] lg:text-[20px] px-3"
           >
-            პროფესიონალური ინდივიდუალური ვარჯიში
+            პროფესიონალური ინდივიდუალური ვარჯიშები
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 60 }}

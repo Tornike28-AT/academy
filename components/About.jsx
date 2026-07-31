@@ -29,7 +29,7 @@ const MotionLink = motion.create(Link);
               duration: 0.7,
               ease: "easeOut",
             }}
-          className="text-gray-500 uppercase texxt-justify text-3xl md:text-6xl  mb-7">ინდივიდუალური ფეხბურთის ვარჯიში <span className='text-black'>პროფესიონალ მწვრთნელთან.</span></motion.h2>
+          className="text-gray-500 uppercase texxt-justify text-3xl md:text-6xl  mb-7">ინდივიდუალური ფეხბურთის ვარჯიშები <span className='text-black'>პროფესიონალ მწვრთნელთან.</span></motion.h2>
           <motion.p 
           initial={{ opacity: 0, x: 70 }}
             whileInView={{ opacity: 1, x: 0 }}
