@@ -1,10 +1,8 @@
 import About from "@/components/About";
-import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
 import Offer from "@/components/Offer";
 import WhyUs from "@/components/WhyUs";
-
 import Cta from "@/components/Cta";
 
 

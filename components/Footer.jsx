@@ -13,6 +13,15 @@ const socialLinks = [
   { icon: IoLogoWhatsapp, href: "https://wa.me/995551079346", hoverClass: "hover:bg-[#29D487]" },
 ];
 
+const navLinks = [
+  { title: "მთავარი", href: "#home" },
+  { title: "ჩვენ შესახებ", href: "#about" },
+  { title: "რას გთავაზობთ", href: "#offer" },
+  { title: "რატომ ჩვენ", href: "#whyus" },
+  { title: "FAQ", href: "#faq" },
+  { title: "კონტაქტი", href: "#contact" },
+];
+
 const SocialLinks = ({ links = socialLinks, size = 20 }) => {
   return (
     <div className="flex justify-center lg:justify-start lg:items-start gap-3">
@@ -37,11 +46,15 @@ export default function Footer() {
             <Image src="/logo.webp" loading="lazy" alt="Tsaava Individual Academy" width={879} height={414} className=" w-50.75 lg:w-60.75 lg:h-28.5" />
         </div>
         <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:gap-10">
-            <Link href="" className="text-white font-bold">მთავარი</Link>
-            <Link href="" className="text-white font-bold">ჩვენ შესახებ</Link>
-            <Link href="" className="text-white font-bold">რატომ ცაავას აკადემია</Link>
-            <Link href="" className="text-white font-bold">FAQ</Link>
-            <Link href="" className="text-white font-bold">კონტაქტი</Link>
+             {navLinks.map(({ title, href }) => (
+            <Link
+              key={title}
+              href={href}
+              className="text-xl text-white  font-hakuna hover:text-green-400 transition-colors active:text-green-400"
+            >
+              {title}
+            </Link>
+          ))}
         </div>
         <SocialLinks />
         <div className=" w-full flex flex-col justify-center items-center  pb-2 md:flex md:flex-row md:justify-between md:px-10 lg:px-30">

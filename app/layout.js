@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import Navbar from "@/components/Navbar";
 
 const geoHakuna = localFont({
   src: [
@@ -134,6 +135,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-56MJ3P9MSF');
           `}
         </Script>
+        <Navbar/>
         {children}
         <Footer />
       </body>

@@ -7,11 +7,18 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Hero = () => {
  
-
 const MotionLink = motion.create(Link);
 
+
+  const scrollToId = (id) => (e) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
-    <section className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
+    <section id="home" className="relative w-full h-screen bg-black flex justify-center items-center overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         src="/videos/hero.mp4"
@@ -21,7 +28,7 @@ const MotionLink = motion.create(Link);
         loop
         playsInline
       />
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/75" />
 
       <div className=" z-10 flex justify-center items-center flex-col  gap-6 ">
         <div className="flex justfy-center items-center flex-col  gap-1.5">
@@ -75,6 +82,7 @@ const MotionLink = motion.create(Link);
         <div className="flex justify-center items-center gap-6 mt-6">
           <MotionLink
             href="#contact"
+            onClick={scrollToId("contact")}
             initial={{ opacity: 0, y: 70 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -87,6 +95,7 @@ const MotionLink = motion.create(Link);
           </MotionLink>
 
           <motion.button
+            onClick={scrollToId("about")}
             initial={{ opacity: 0, y: 70 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}

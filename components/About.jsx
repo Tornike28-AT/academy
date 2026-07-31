@@ -8,7 +8,7 @@ const About = () => {
 const MotionLink = motion.create(Link);
 
   return (
-    <section className="mt-25 px-5 lg:px-15 xl:px-5 max-w-380 w-full mx-auto overflow-x-clip">
+    <section id="about" className="mt-25 px-5 lg:px-15 xl:px-5 max-w-380 w-full mx-auto overflow-x-clip">
       <div className="flex flex-col items-center space-y-5 lg:flex-row lg:justify-between lg:gap-10">
         <div className="max-w-165 w-full shrink space-y-5 flex flex-col justify-center">
           <motion.p 

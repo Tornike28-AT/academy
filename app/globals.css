@@ -7,3 +7,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-geo-hakuna), sans-serif;
 }
+
+.font-hakuna {
+  font-family: var(--font-geo-hakuna), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 6.25rem; /* matches h-25 */
+}

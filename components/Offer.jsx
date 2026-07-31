@@ -12,9 +12,16 @@ const Offer = () => {
 
  const MotionLink = motion.create(Link);
 
+  const scrollToId = (id) => (e) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
-    <section className="mt-28 mb-25   max-w-380 w-full mx-auto overflow-x-clip">
+    <section id="offer" className="mt-28 mb-25   max-w-380 w-full mx-auto overflow-x-clip">
       <div className="flex flex-col px-5 lg:px-15 xl:px-5 items-center space-y-5 lg:flex-row lg:justify-between gap-5">
         <div className="relative max-w-165 w-full">
             <motion.h2
@@ -54,6 +61,7 @@ const Offer = () => {
 
             <MotionLink
              href="#contact"
+            onClick={scrollToId("contact")}
             initial={{ opacity: 0, y: 70 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
