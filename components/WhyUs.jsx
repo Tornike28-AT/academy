@@ -30,7 +30,7 @@ export default function WhyUs() {
             duration: 0.7,
             ease: "easeOut",
           }}
-          className="text-gray-500 uppercase text-4xl md:text-6xl "
+          className="text-gray-500 uppercase text-4xl md:text-6xl font-hakuna"
         >
           რატომ ცაავას <span className=" text-black">აკადემია?</span>
         </motion.h2>

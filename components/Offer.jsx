@@ -32,7 +32,7 @@ const Offer = () => {
               duration: 0.7,
               ease: "easeOut",
             }}
-            className="text-gray-500 uppercase  leading-17 text-4xl md:text-6xl  mb-5">რას გთავაზობთ <span className="text-black">აკადემია</span></motion.h2>
+            className="text-gray-500 uppercase  leading-17 text-4xl md:text-6xl  mb-5 font-hakuna">რას გთავაზობთ <span className="text-black">აკადემია</span></motion.h2>
             <motion.p 
              initial={{ opacity: 0, x: 70 }}
             whileInView={{ opacity: 1, x: 0 }}

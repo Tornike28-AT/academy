@@ -70,7 +70,7 @@ const Faq = () => {
               duration: 0.7,
               ease: "easeOut",
             }}
-        className='text-gray-500 uppercase  text-4xl md:text-6xl  mb-5'>
+        className='text-gray-500 uppercase  text-4xl md:text-6xl  mb-5 font-hakuna'>
             ხშირად დასმული <br/> <span className='text-black'>კითხვები</span>
         </motion.h2>
         <div className=' flex gap-5  flex-col items-center lg:flex-row lg:justify-between lg:gap-15'>
