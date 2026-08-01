@@ -23,7 +23,8 @@ const geoHakuna = localFont({
     },
   ],
   variable: "--font-geo-hakuna",
-  display: "swap",
+   display: "block", // was "swap"
+  preload: true,
 });
 
 
