@@ -7,7 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const socialLinks = [
   { icon: FaInstagram, href: "https://instagram.com/tsaava_individual_academy", hoverClass: "hover:bg-[#D62976]" },
-  { icon: FaFacebookF, href: "https://www.facebook.com/groups/1595165332197585", hoverClass: "hover:bg-[#1877F2]" },
+  { icon: FaFacebookF, href: "https://www.facebook.com/share/17ypWf1JnS/", hoverClass: "hover:bg-[#1877F2]" },
   { icon: FaTiktok, href: "https://www.tiktok.com/@tsaavaindividualacademy", hoverClass: "hover:bg-[#FE2C55]" },
   { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/tsaava-individual-academy-6282a0378/", hoverClass: "hover:bg-[#0A66C2]" },
   { icon: IoLogoWhatsapp, href: "https://wa.me/995551079346", hoverClass: "hover:bg-[#29D487]" },
@@ -29,6 +29,7 @@ const SocialLinks = ({ links = socialLinks, size = 20 }) => {
         <Link
           key={index}
           href={href}
+          target="_blank"
           className={`flex p-2 ring-1 rounded-full transition-colors text-white ${hoverClass}`}
         >
           <Icon size={size} />
