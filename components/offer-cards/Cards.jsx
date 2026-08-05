@@ -67,10 +67,10 @@ const Cards = () => {
                 className={`bg-zinc-400/20 rounded-full p-2 ml-auto shrink-0 ${activeCard === card.id? "hidden" : ""}`}
               />
             </div>
-            {activeCard === card.id && <p className="text-sm lg:text-lg">{card.desc}</p>}
+            {activeCard === card.id && <p className="text-xs sm:text-sm xl:text-lg">{card.desc}</p>}
           </div>
                           
-          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="eager" alt={card.alt} className=" rounded-lg" />}
+          {activeCard === card.id && <Image src={card.imgUrl} width={154} height={220} loading="eager" alt={card.alt} className=" max-md:max-w-28 rounded-lg" />}
         </motion.div>
       ))}
     </div>
