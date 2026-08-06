@@ -115,6 +115,30 @@ export const metadata = {
   },
 };
 
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tsaava Individual Academy",
+  "url": "https://tsaavaacademy.ge",
+  "description": "პროფესიონალური ინდივიდუალური საფეხბურთო ვარჯიშები თბილისში ყველა ასაკისა და დონისთვის.",
+  "inLanguage": "ka",
+  "areaServed": {
+    "@type": "City",
+    "name": "თბილისი"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "ინდივიდუალური საფეხბურთო ვარჯიში",
+      "serviceType": "Football Individual Training"
+    }
+  }
+};
+
+
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -136,6 +160,13 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-56MJ3P9MSF');
           `}
         </Script>
+<Script
+  id="org-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+/>
+
+
         <Navbar/>
         {children}
         <Footer />

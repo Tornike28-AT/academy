@@ -65,7 +65,7 @@ export default function WhyUs() {
       >
         <Image
           src="/images/IMAGE-11.webp"
-          loading="lazy"
+          loading="eager"
           alt="ball and stadium image"
           width={1920}
           height={1080}

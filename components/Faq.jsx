@@ -56,11 +56,29 @@ const faqItems = [
   }
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ka",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+};
+
 
 
 const Faq = () => {
   return (
     <section id='faq' className='mt-0 md:mt-30 mb-20 px-5 lg:px-15 xl:px-5   max-w-380 w-full mx-auto overflow-x-clip'>
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="flex flex-col items-start gap-6 md:mt-18 max-lg:max-w-165 w-full mx-auto">
         <motion.h2 
          initial={{ opacity: 0, y: 70 }}

@@ -51,7 +51,7 @@ const Offer = () => {
               ease: "easeOut",
             }}
            className="max-w-165 w-full relative flex  ">
-          <Image src="/images/IMAGE-7.webp" alt="" width={4032} height={3024} className="hidden md:block w-full rounded-2xl" />
+          <Image src="/images/IMAGE-7.webp" alt="" width={1920} height={1080} className="hidden md:block w-full rounded-2xl" />
 
         </motion.div>
         </div>
