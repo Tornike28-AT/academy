@@ -44,7 +44,12 @@ export default function Footer() {
   return (
     <section className=" w-full h-auto flex flex-col justify-center items-center space-y-12 bg-black ">
         <div className="mt-5 relative">
-            <Image src="/logo.webp" loading="lazy" alt="Tsaava Individual Academy" width={879} height={414} className=" w-50.75 lg:w-60.75 lg:h-28.5" />
+            <Image src="/logo.webp" loading="eager" alt="Tsaava Individual Academy"
+              fetchPriority="high"
+             width={355}
+             height={167}
+             sizes="(max-width: 1024px) 213px, 355px" 
+             className=" w-50.75 lg:w-60.75 lg:h-28.5" />
         </div>
         <div className="flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:gap-10">
              {navLinks.map(({ title, href }) => (
