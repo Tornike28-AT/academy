@@ -67,8 +67,9 @@ export default function WhyUs() {
           src="/images/IMAGE-11.webp"
           loading="eager"
           alt="ball and stadium image"
-          width={1920}
-          height={1080}
+          width={651}
+          height={868}
+          sizes="(max-width: 768px) 100vw, 651px"
           className="rounded-2xl w-full"
         />
       </motion.div>

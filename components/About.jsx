@@ -68,7 +68,12 @@ const MotionLink = motion.create(Link);
             }}
         className="max-w-155 w-full relative  flex flex-col items-center ">
 
-          <Image src="/images/IMAGE-1.webp" loading="lazy" alt="Coach photo" width={1920} height={1080} className="z-5  w-full rounded-2xl " />
+          <Image src="/images/IMAGE-1.webp" 
+          loading="lazy" 
+          alt="Coach photo"
+          width={651}
+          height={868}
+          sizes="(max-width: 768px) 100vw, 651px" className="z-5  w-full rounded-2xl " />
 
         </motion.div>
       </div>

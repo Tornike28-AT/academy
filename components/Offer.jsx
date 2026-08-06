@@ -51,7 +51,7 @@ const Offer = () => {
               ease: "easeOut",
             }}
            className="max-w-165 w-full relative flex  ">
-          <Image src="/images/IMAGE-7.webp" alt="" width={1920} height={1080} className="hidden md:block w-full rounded-2xl" />
+          <Image src="/images/IMAGE-7.webp" alt="" width={660} height={495} className="hidden md:block w-full rounded-2xl" />
 
         </motion.div>
         </div>
@@ -73,7 +73,7 @@ const Offer = () => {
           </MotionLink>
 
         </div>
-            <Image src="/images/IMAGE-7.webp" loading="eager" alt="Coach training image" width={1920} height={1080} className="block md:hidden w-full max-w-165 rounded-2xl" />
+            <Image src="/images/IMAGE-7.webp" loading="eager" alt="Coach training image" width={660} height={495} sizes="(max-width: 768px) 100vw, 660px" className="block md:hidden w-full max-w-165 rounded-2xl" />
         </div>
       
     </section>

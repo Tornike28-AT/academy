@@ -120,8 +120,9 @@ const MotionLink = motion.create(Link);
             src="/images/IMAGE-10.webp"
             loading="eager"
             alt="stadium with players image"
-            width={550}
-            height={450}
+            width={651}
+            height={434}
+            sizes="(max-width: 768px) 100vw, 651px"
             className="z-5  w-full rounded-2xl"
           />
         </motion.div>
