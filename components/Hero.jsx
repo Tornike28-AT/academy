@@ -117,6 +117,7 @@ const MotionLink = motion.create(Link);
           fetchPriority="high"
           width={879}
           height={414}
+          sizes="(max-width: 1024px) 213px, 355px" 
           className="w-50.75 lg:w-60.75 lg:h-28.5 absolute bottom-2 lg:bottom-10 lg:right-10"
         />
       </div>

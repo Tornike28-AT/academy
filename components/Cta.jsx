@@ -65,7 +65,7 @@ const MotionLink = motion.create(Link);
             თავდაჯერებული მოთამაშე. დაგვიკავშირდი დღესვე, რათა მიიღოთ
             დამატებითი ინფორმაცია ან დაჯავშნო პირველი ვარჯიში.
           </p>
-          <ul className="text-lg font-medium space-y-3 text-zinc-600">
+          <div className="text-lg font-medium space-y-3 text-zinc-600">
             <Link
               href="tel:+995 551 07 93 46"
               className="flex items-center gap-2 hover:underline"
@@ -89,7 +89,7 @@ const MotionLink = motion.create(Link);
               <FaLocationDot size={20} className="text-[#158F3C]" />
               182 Davit Aghmashenebeli Ave, Tbilisi
             </Link>
-          </ul>
+          </div>
 
           <SocialLinks />
 

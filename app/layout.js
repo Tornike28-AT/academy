@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
+import CookieConsent from "@/components/CookieConsent";
 
 const geoHakuna = localFont({
   src: [
@@ -148,24 +149,13 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
       
 
- <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-56MJ3P9MSF"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-56MJ3P9MSF');
-          `}
-        </Script>
+
 <Script
   id="org-schema"
   type="application/ld+json"
   dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
 />
-
+<CookieConsent/>
 
         <Navbar/>
         {children}
