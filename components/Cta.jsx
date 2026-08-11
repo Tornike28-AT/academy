@@ -81,13 +81,13 @@ const MotionLink = motion.create(Link);
               tsaava.individual.academy@gmail.com
             </Link>
             <Link
-              href="https://maps.app.goo.gl/fnBh1RUQjbe3dyaz7"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:underline"
             >
               <FaLocationDot size={20} className="text-[#158F3C]" />
-              182 Davit Aghmashenebeli Ave, Tbilisi
+              დაემატება მალე...
             </Link>
           </div>
 
