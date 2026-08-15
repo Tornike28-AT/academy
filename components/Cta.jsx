@@ -81,13 +81,13 @@ const MotionLink = motion.create(Link);
               tsaava.individual.academy@gmail.com
             </Link>
             <Link
-              href="#"
+              href="https://maps.app.goo.gl/uCXkqGKwtQBPucrF7"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:underline"
             >
               <FaLocationDot size={20} className="text-[#158F3C]" />
-              დაემატება მალე...
+              დირსის სპორტული კომპლექსი
             </Link>
           </div>
 
